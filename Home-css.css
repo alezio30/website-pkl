@@ -1,0 +1,32 @@
+.navbar{
+    display: block;
+    background-color:skyblue;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar ul{
+    top: 0;
+    margin: 0;
+    float: right;
+}
+.navbar li{
+    margin: 0;
+    top: 0;
+    
+    display: inline-block;
+    padding: 14px 16px;
+}
+
+.navbar li:hover{
+    background-color:#ddd;
+    color: black;
+}
+.active{
+    background-color: #4caf50;
+    color:white;
+}
