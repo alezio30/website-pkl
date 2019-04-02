@@ -15,37 +15,39 @@
 </head>
 
 <body>
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#00bfff">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">BANK NIAGA PERKASA</a>
+    <!-- start Navbar -->
+    <div id="Navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004d99">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-danger shadow-lg" href="#">BATAM NIAGA PERKASA</a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="Home.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Company</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Company.html">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacts.html">Contacts</a>
+                    </li>
 
 
-            </ul>
-        </div>
+                </ul>
+            </div>
 
-    </nav>
+        </nav>
     </div>
+    <!-- End Navbar-->
         <div id="carouselSlide" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
@@ -80,45 +82,43 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-    <div class="bottom container">
-        <form>
-            <div class="form-group row">
-                <div class="col">
-                    <label for="inputFirstname4">First Name</label>
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col">
-                    <label for="inputLastname4">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Leave reply here</label>
-                <textarea class="form-control" id="reply" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail3">Email</label>
-                <div class="col-sm">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-            </div>
-
-        </form>
-    </div>
-    <div class="mb-0">
+<!-- footer-->
     <footer>
-        <div class="card mb-3">
-            <div class="card-body bg-info">
-                <h5 class="card-title">Contacts</h5>
-                <h6 class="card-text">Email</h6>
-                <p>sales@bankniagaperkasa.com</p>
-                <p>sales1@bankniagaperkasa.com</p>
-                <p></p>
+
+        <div class="container-fluid d-sm-flex bg-dark">
+            <div class="flex-row flex-fill p-5 align-content-center">
+
+                <h3 class="text-primary text-center">Contacts</h3>
+
             </div>
+
+            <div class="flex-row flex-fill p-l-3 pr-5">
+                <h5 class="text-info pt-3 pb-3">Email</h5>
+                <p class="text-info">sales@bankniagaperkasa.com</p>
+                <p class="text-info">sales1@bankniagaperkasa.com</p>
+
+            </div>
+            <div class="flex-row flex-fill p-l-3 pr-5">
+                <h3 class="text-info pt-3 pb-3">Our Location</h3>
+                <p class="text-info">Komp. Citra Buana Industrial Park I<br>
+                    Blok A No.06
+                    Kampung Seraya<br>
+                    Batam - Indonesia</p>
+            </div>
+            <div class="flex-row flex-fill p-l-3 pr-5">
+                <h3 class="text-info pt-3 pb-3">Telp.</h3>
+                <p class="text-info">
+                    : (+62 778) 452558 <br>
+                    : (+62 778) 495030 <br>
+                    : (+62 778) 458025 <br>
+                    : (+62 778) 458021 <br>
+                </p>
+            </div>
+
         </div>
+
     </footer>
-    </div>
+    <!-- footer-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
