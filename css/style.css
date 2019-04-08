@@ -11,9 +11,9 @@ body {
     .galleryFilters .filterList .filterListItem {
       margin-right: 10px; }
       .galleryFilters .filterList .filterListItem.active {
-        background-color: #9517c3; }
+        background-color: #3399ff; }
   .galleryFilters .violetBtn {
-    background-color: #610f7f;
+    background-color: #ff0000;
     color: #ffffff; }
   .galleryFilters .searchBar {
     flex-grow: 1;
