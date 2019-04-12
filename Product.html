@@ -40,96 +40,35 @@
 
         </nav>
     </div>
-    <div class="container">
-        <div class="row  shadow mb-3 sticky-top rounded" style="background-color: #f5f5ef">
-            <div class="col-md-12 d-flex flex-wrap justify-content-between  galleryFilters">
-                <ul class="list-inline filterList collapse show" id="SearchCollapse">
-                    <li class="filterListItem btn violetBtn" data-filter="all">ALL</li>
-                    <li class="filterListItem btn violetBtn" data-filter="animals">ANIMALS</li>
-                    <li class="filterListItem btn violetBtn" data-filter="nature">NATURE</li>
-                    <li class="filterListItem btn violetBtn" data-filter="places">PLACES</li>
-                </ul>
-                <input type="text" placeholder="Search" class="searchBar form-control" name="search" data-search>
+    <div class="container m-sm-5">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+              </div>
             </div>
+            <div class="col-sm-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <H1>sa</H1>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h2>sdasd</h2>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    ...
 
-        </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    ...
 
-        <div class="row filtr-container galleryContainer">
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,animals" data-sort="cat">
-                <img src="images/animals/animals (1).jpg" alt="">
-                <span class="item-desc">Cat</span>
+                </div>
+              </div>
             </div>
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,animals" data-sort="dog">
-                <img src="images/animals/animals (2).jpg" alt="">
-                <span class="item-desc">dog</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,animals" data-sort="dog">
-                <img src="images/animals/animals (3).jpg" alt="">
-                <span class="item-desc">dog</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,animals" data-sort="cat">
-                <img src="images/animals/animals (4).jpg" alt="">
-                <span class="item-desc">Cat</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,animals" data-sort="dog">
-                <img src="images/animals/animals (5).jpg" alt="">
-                <span class="item-desc">dog</span>
-            </div>
-
-
-
-
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,nature" data-sort="stones">
-                <img src="images/nature/nature (1).jpg" alt="">
-                <span class="item-desc">Stones</span>
-            </div>
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,nature" data-sort="dessert">
-                <img src="images/nature/nature (2).jpg" alt="">
-                <span class="item-desc">Desert</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,nature" data-sort="waterfall">
-                <img src="images/nature/nature (3).jpg" alt="">
-                <span class="item-desc">Waterfall</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,nature" data-sort="leaf">
-                <img src="images/nature/nature (4).jpg" alt="">
-                <span class="item-desc">Leaf</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,nature" data-sort="waterfall">
-                <img src="images/nature/nature (5).jpg" alt="">
-                <span class="item-desc">Waterfall</span>
-            </div>
-
-
-
-
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,places" data-sort="highway">
-                <img src="images/places/arch (1).jpg" alt="">
-                <span class="item-desc">Highway</span>
-            </div>
-            <!-- item -->
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,places" data-sort="tower">
-                <img src="images/places/arch (2).jpg" alt="">
-                <span class="item-desc">Tower</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,places" data-sort="roadside">
-                <img src="images/places/arch (3).jpg" alt="">
-                <span class="item-desc">Roadside</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,places" data-sort="streets">
-                <img src="images/places/arch (4).jpg" alt="">
-                <span class="item-desc">Streets</span>
-            </div>
-            <div class="col-md-3 filtr-item thumbnail" data-category="all,places" data-sort="city taxi">
-                <img src="images/places/arch (5).jpg" alt="">
-                <span class="item-desc">City Taxi</span>
-            </div>
-        </div>
+          </div>
     </div>
     <!-- footer-->
     <footer>
