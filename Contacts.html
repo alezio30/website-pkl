@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    
     <title>Contacts</title>
 </head>
 
@@ -47,24 +48,25 @@
             <h4 class="mt-2">Want to Emails Us ?</h4>
 
             <div class="pt-3 pb-3 rounded">
-                <form>
+                <form >
                     <div class="form-group">
                             <label for="inputFirstname4">Name</label>
-                            <input type="text" class="form-control" placeholder="name">
+                            <input type="text" class="form-control" id="inputname" placeholder="name"required="">
+                            
                     </div>
                     <div class="form-group row">
                         <div class="col-sm">
                             <label for="NameCompany">Company Name</label>
-                            <input type="text" class="form-control" id="inputNameCompany" placeholder="Company Name">
+                            <input type="text" class="form-control" id="inputcompanyname" placeholder="Company Name"required="">
                         </div>
                         <div class="col-sm">
                             <label for="No.Telp">No.Telp</label>
-                            <input type="tel" class="form-control" id="inputNoTelp" placeholder="Telp Number">
+                            <input type="tel" class="form-control" id="inputNoTelp" placeholder="Telp Number"required="">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="Email"> Email</label>
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"required="">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"> Leave reply here</label>
@@ -72,6 +74,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    
                 </form>
             </div>
         </div>
@@ -121,9 +124,19 @@
     <!-- footer-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/Bootstrap_validate/bootstrap-validate.js">
+    <script src="js/Bootstrap_validate/constants.js">
+    <script src="js/Bootstrap_validate/errors.js">
+    <script src="js/Bootstrap_validate/rules.js">
+
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+                        bootstrapValidate(['#inputname','#inputcompanyname'], 'min:3: Please input character more than 3!');
+                        bootstrapValidate('#InputEmail', 'email:Enter a valid E-Mail!');
+                        bootstrapValidate('#inputNoTelp','numeric:Please only enter numeric characters!');
+                        </script>
 </body>
 
 </html>
