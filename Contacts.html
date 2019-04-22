@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
     <title>Contacts</title>
 </head>
 
@@ -16,7 +16,8 @@
     <!-- start Navbar -->
     <div id="Navbar">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004d99">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand text-danger" href="#">BATAM NIAGA PERKASA</a>
@@ -33,13 +34,11 @@
                         <a class="nav-link" href="About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="Contacts.html">Contacts<span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="Contacts.html">Contacts<span
+                                class="sr-only">(current)</span></a>
                     </li>
-
-
                 </ul>
             </div>
-
         </nav>
     </div>
     <!-- End Navbar-->
@@ -48,40 +47,52 @@
             <h4 class="mt-2">Want to Emails Us ?</h4>
 
             <div class="pt-3 pb-3 rounded">
-                <form >
+                <form id="form" method="POST" action="" class="needs-validation" novalidate>
                     <div class="form-group">
-                            <label for="inputFirstname4">Name</label>
-                            <input type="text" class="form-control" id="inputname" placeholder="name"required="">
-                            
+                        <label for="inputFirstname4">Name</label>
+                        <input type="text" class="form-control" id="inputname" placeholder="name" required minlength="3" >
+                        
+                            <div class="invalid-feedback">Please fill out this field minimum 3 characters !</div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm">
                             <label for="NameCompany">Company Name</label>
-                            <input type="text" class="form-control" id="inputcompanyname" placeholder="Company Name"required="">
+                            <input type="text" class="form-control" id="inputcompanyname" placeholder="Company Name"
+                                minlength="3" required >
+                            
+                            <div class="invalid-feedback">Please fill out this field minimum 3 characters !</div>
                         </div>
                         <div class="col-sm">
                             <label for="No.Telp">No.Telp</label>
-                            <input type="tel" class="form-control" id="inputNoTelp" placeholder="Telp Number"required="">
+                            <input type="tel" class="form-control" id="inputNoTelp" placeholder="Telp Number"
+                                pattern="[0-9]"  minlength="11" max="13" required >
+                            
+                            <div class="invalid-feedback">Please insert minimum 11-13 number only ! </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="Email"> Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"required="">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required >
+                        
+                        <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"> Leave reply here</label>
-                        <textarea class="form-control" id="reply" rows="3"></textarea>
+                        <textarea class="form-control" id="reply" rows="2" minlength="5" required></textarea>
+                        
+                            <div class="invalid-feedback">Please insert minimum 5 characters</div>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    
                 </form>
             </div>
         </div>
         <h1>Our Location</h1>
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.0174052661596!2d104.0200136928235!3d1.1480520278680195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e82948e6333918f!2sPT+Batam+Niaga+Perkasa!5e0!3m2!1sid!2sid!4v1553833335122!5m2!1sid!2sid" width="300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.0174052661596!2d104.0200136928235!3d1.1480520278680195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e82948e6333918f!2sPT+Batam+Niaga+Perkasa!5e0!3m2!1sid!2sid!4v1553833335122!5m2!1sid!2sid"
+                width="300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -93,21 +104,21 @@
                     <h5 class="text-info pt-3 pb-3">Email</h5>
                     <p class="text-info">sales@batamniagaperkasa.com</p>
                     <p class="text-info">sales1@batamniagaperkasa.com</p>
-
                 </div>
                 <div class="flex-row flex-fill p-l-3 pr-5">
                     <h3 class="text-info pt-3 pb-3">Our Location</h3>
-                    <p class="text-info">Komp. Citra Buana Industrial Park I<br>
-                        Blok A No.05-06
-                        Kampung Seraya<br>
-                        Batam - Indonesia</p>
+                    <p class="text-info">
+                        Komp. Citra Buana Industrial Park I<br />
+                        Blok A No.05-06 Kampung Seraya<br />
+                        Batam - Indonesia
+                    </p>
                 </div>
                 <div class="flex-row flex-fill p-l-3 pr-5">
                     <h3 class="text-info pt-3 pb-3">Telp.</h3>
                     <p class="text-info">
-                        (+62 778) 452558 <br>
-                        (+62 778) 495030 <br>
-                        (+62 778) 458025 <br>
+                        (+62 778) 452558 <br />
+                        (+62 778) 495030 <br />
+                        (+62 778) 458025 <br />
                         (+62 778) 458021
                     </p>
                 </div>
@@ -118,25 +129,36 @@
                     </p>
                 </div>
             </div>
-            <hr>
+            <hr />
         </div>
     </footer>
     <!-- footer-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/Bootstrap_validate/bootstrap-validate.js">
-    <script src="js/Bootstrap_validate/constants.js">
-    <script src="js/Bootstrap_validate/errors.js">
-    <script src="js/Bootstrap_validate/rules.js">
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script>
-                        bootstrapValidate(['#inputname','#inputcompanyname'], 'min:3: Please input character more than 3!');
-                        bootstrapValidate('#InputEmail', 'email:Enter a valid E-Mail!');
-                        bootstrapValidate('#inputNoTelp','numeric:Please only enter numeric characters!');
-                        </script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
 </body>
 
 </html>
