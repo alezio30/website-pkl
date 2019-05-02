@@ -22,28 +22,26 @@
 
 <body>
     <div id="Navbar-top">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a3636 ;font-family: 'Open Sans' , sans-serif !important;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#007bff
+        ;font-family: 'Open Sans' , sans-serif !important;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand text-danger" href="#">BATAM NIAGA PERKASA</a>
+            <a class="navbar-brand" style="color:hsl(177, 97%, 48%)" href="#">BATAM NIAGA PERKASA</a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav ml-3 mt-2 mt-lg-0">
+                    <li class="nav-item pl-2 pr-2">
                         <a class="nav-link" href="Home.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Company.html">Company</a>
-                    </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active pl-2 pr-2">
                         <a class="nav-link" href="Product.html">Product<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item pl-2 pr-2">
                         <a class="nav-link" href="About.html">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item pl-2 pr-2">
                         <a class="nav-link" href="Contacts.html">Contacts</a>
                     </li>
                 </ul>
@@ -51,11 +49,14 @@
 
         </nav>
     </div>
-    <div class="container-fluid p-5" style="background-color: rgb(216, 216, 216)">
-            <div class="text-center"><h2 style="font-family"> Our Product</h2></div>
+    <div class="container-fluid p-5" style="padding-top: 30px !important;background-color:white">
+            <div class="text-center">
+                <h2><i class="fab fa-product-hunt"></i>RODUCT</h2>
+                <hr>
+            </div>
         <div class="row">
-            <div class="col-sm-4 col-md-3 border border-secondary rounded">
-                <h5 class="pt-2">Brands</h5>
+            <div class="col-sm-4 col-md-3 border border-secondary rounded" style="background-color: #ebebe0">
+                <h5 class="pt-2" style="color :#007bff">Brands</h5>
                 <hr>
                 <div class="nav flex-column nav-pills col p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="HY-LOK-tab" data-toggle="pill" href="#HY-LOK" role="tab"
@@ -154,35 +155,37 @@
         </div>
     </div>
     <!-- footer-->
-    <footer style="background-color: #404040">
+    <footer style="background-color:#000 ">
 
         <div class="container-fluid d-sm-flex">
-            <div class="flex-row flex-fill p-5 align-content-center">
-                <h3 class="text-primary text-center">Contacts</h3>
-            </div>
 
-            <div class="flex-row flex-fill p-l-3 pr-5">
-                <h5 class="text-light  pt-3"><i class="far fa-envelope"></i>      Email </i></h5>
-                <p class="text-light ">sales@Batamniagaperkasa.com</p>
-                <p class="text-light ">sales1@Batamniagaperkasa.com</p>
+            <div class="flex-row flex-fill pt-2 pl-2 pr-2">
+                <h5 class="text-light  pt-3"style="color: #ff1a1a !important"><i class="far fa-envelope" style="font-size: 24 px ; "></i> &nbsp; Email </i></h5>
+                <address style="color: #999999">sales@Batamniagaperkasa.com<br>
+                sales1@Batamniagaperkasa.com</address>
             </div>
-            <div class="flex-row flex-fill p-l-3 pr-5">
-                <h3 class="text-light  pt-3"><i class="fas fa-map-marker-alt" style="font-size: 24 px ;"></i> Our Location</h3>
-                <p class="text-light <pt-1></pt-1>">Komp. Citra Buana Industrial Park I<br>
+            <div class="flex-row flex-fill pt-2 pl-2 pr-3">
+                <h5 class="text-light  pt-3"style="color: #ff1a1a !important"><i class="fas fa-map-marker-alt" style="font-size: 24 px ;"></i> &nbsp; Our Location</h5>
+                <address style="color: #999999">Komp. Citra Buana Industrial Park I<br>
                     Blok A No.06
                     Kampung Seraya<br>
-                    Batam - Indonesia</p>
+                    Batam - Indonesia</address>
             </div>
-            <div class="flex-row flex-fill p-l-3 pr-5">
-                <h3 class="text-light  pt-3">Telp.</h3>
-                <p class="text-light ">
+            <div class="flex-row flex-fill pt-2 pl-2 pr-3">
+                <h5 class="text-light  pt-3"style="color: #ff1a1a !important"><i class="fas fa-phone"></i> &nbsp; Telp.</h5>
+                <address style="color: #999999">
                     : (+62 778) 452558 <br>
                     : (+62 778) 495030 <br>
                     : (+62 778) 458025 <br>
                     : (+62 778) 458021 <br>
-                </p>
+                </address>
             </div>
-
+            <div class="flex-row flex-fill pt-2 pl-2 pr-3">
+                    <h5 class="text-light  pt-3"style="color: #ff1a1a !important"><i class="fas fa-fax"></i> &nbsp; Fax</h5>
+                    <address style="color: #999999">
+                        :(+62 778) 427870
+                    </address>
+                </div>    
         </div>
 
     </footer>
@@ -191,9 +194,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.3.4/jquery.filterizr.min.js">
-    </script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
